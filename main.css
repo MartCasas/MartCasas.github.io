@@ -7,7 +7,7 @@
 }
 
 :root {
-  --dark-color: #000;
+  --dark-color: #090733;
 }
 
 body {
@@ -196,7 +196,7 @@ body {
   width: 9vmin;
   height: 4vmin;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: rgb(255, 251, 0);
 }
 .flower__white-circle::after {
   content: "";
@@ -314,7 +314,7 @@ body {
           animation-delay: 3.5s;
 }
 .flower__grass {
-  --c: #159faa;
+  --c: #5deeaa;
   --line-w: 1.5vmin;
   position: absolute;
   bottom: 12vmin;
