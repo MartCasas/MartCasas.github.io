@@ -44,6 +44,7 @@ body {
   --fl-speed: 0.8s;
 }
 .flower--1 {
+  transform: rotate(-5deg) translateX(-3vmin);
   -webkit-animation: moving-flower-1 4s linear infinite;
   animation: moving-flower-1 4s linear infinite;
 }
@@ -77,6 +78,7 @@ body {
   animation: blooming-leaf-left var(--fl-speed) 2s backwards;
 }
 .flower--2 {
+  transform: rotate(3deg) translateX(3vmin);
   left: 50%;
   transform: rotate(20deg);
   -webkit-animation: moving-flower-2 4s linear infinite;
@@ -104,6 +106,7 @@ body {
   animation: blooming-leaf-left var(--fl-speed) 1.3s backwards;
 }
 .flower--3 {
+  transform: rotate(-2deg) translateX(-2vmin);
   left: 50%;
   transform: rotate(-15deg);
   -webkit-animation: moving-flower-3 4s linear infinite;
@@ -206,7 +209,7 @@ body {
   transform: translate(-50%, -50%);
   width: 60%;
   height: 60%;
-  border-radius: inherit;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(157.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), linear-gradient(90deg, rgb(255, 235, 18), rgb(255, 206, 0));
 }
 .flower__line {
