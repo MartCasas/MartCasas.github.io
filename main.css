@@ -1152,3 +1152,70 @@ body {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
 }/*# sourceMappingURL=main.css.map */
+
+/* === Sunflower aesthetic overrides (added by ChatGPT) === */
+:root{
+  --petal-1: #F6C453;
+  --petal-2: #F2A007;
+  --center:  #6B3E26;
+  --center-2:#4B2A16;
+  --stem:   #2F7D3A;
+  --leaf:   #3DA45B;
+}
+
+body{
+  background: linear-gradient(to bottom, #EAF6FF, #CDEBFF 60%, #9BD18A 60%, #85C17E 100%) !important;
+}
+
+.flowers{
+  transform: scale(1.06);
+  transform-origin: bottom center;
+}
+
+@media (max-width: 700px){
+  .flowers{ transform: scale(1.22); }
+}
+
+.flower__leaf{
+  background-image: linear-gradient(to top, var(--petal-2), var(--petal-1)) !important;
+  opacity: 0.98 !important;
+  filter: saturate(1.1) contrast(1.05);
+}
+
+.flower__white-circle{
+  background: radial-gradient(circle at 55% 45%, var(--center), var(--center-2)) !important;
+  box-shadow: inset 0 0.5vmin 1vmin rgba(0,0,0,.35);
+  width: 8.6vmin; height: 8.6vmin;
+  left: -4.3vmin; top: -4.3vmin;
+}
+
+.flower__white-circle::after{
+  background: radial-gradient(circle, rgba(255,255,255,.08) 0 40%, transparent 41%) !important;
+  width: 100%; height: 100%;
+  opacity: .5;
+}
+
+.flower__line{
+  background: linear-gradient(to top, var(--stem), #3d9d4b) !important;
+}
+
+.flower__line__leaf{
+  background: linear-gradient(to top, var(--leaf), #74d389) !important;
+  opacity: .95;
+}
+
+/* Gentle sway for each flower for a lively look */
+.flower{
+  animation: sway 6s ease-in-out infinite;
+}
+.flower--2{ animation-delay: .7s; }
+.flower--3{ animation-delay: 1.4s; }
+.flower--4{ animation-delay: 2.1s; }
+.flower--5{ animation-delay: 2.8s; }
+.flower--6{ animation-delay: 3.5s; }
+
+@keyframes sway{
+  0%,100%{ transform: translateZ(0) rotateZ(0deg); }
+  50%{ transform: translateZ(0) rotateZ(2.1deg); }
+}
+/* === End sunflower overrides === */
