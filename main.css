@@ -1218,7 +1218,7 @@ body{
 
 
 
-/* === Animación de florecer desde el suelo === */
+
 .flower {
   transform-origin: bottom center;
   animation: flower-grow 1.5s ease-out forwards;
@@ -1243,7 +1243,7 @@ body{
 
 
 
-/* === Animación de florecer desde el suelo para el contenedor === */
+
 .flower-wrapper {
   transform-origin: bottom center;
   animation: flower-grow 1.5s ease-out forwards;
