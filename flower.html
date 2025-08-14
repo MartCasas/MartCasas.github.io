@@ -3,26 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flores</title>
+    <title>Jardín de Flores</title>
     <link rel="stylesheet" href="main.css">
     <style>
         /* Rotaciones fijas para que las flores se vean más naturales */
-        .flower--1 {
-            left: 30%;
-            animation-delay: 0.2s;
-            transform: scaleY(0) rotate(-5deg);
-        }
-        .flower--2 {
-            left: 60%;
-            animation-delay: 0.5s;
-            transform: scaleY(0) rotate(7deg);
+        .flower--1 { left: 10%; animation-delay: 0.2s; transform: scaleY(0) rotate(-5deg); }
+        .flower--2 { left: 20%; animation-delay: 0.4s; transform: scaleY(0) rotate(6deg); }
+        .flower--3 { left: 30%; animation-delay: 0.6s; transform: scaleY(0) rotate(-3deg); }
+        .flower--4 { left: 40%; animation-delay: 0.8s; transform: scaleY(0) rotate(8deg); }
+        .flower--5 { left: 50%; animation-delay: 1s; transform: scaleY(0) rotate(-4deg); }
+        .flower--6 { left: 60%; animation-delay: 1.2s; transform: scaleY(0) rotate(5deg); }
+        .flower--7 { left: 70%; animation-delay: 1.4s; transform: scaleY(0) rotate(-6deg); }
+        .flower--8 { left: 80%; animation-delay: 1.6s; transform: scaleY(0) rotate(4deg); }
+
+        /* Cesped */
+        .grass {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: green;
+            clip-path: polygon(
+                0% 100%, 5% 60%, 10% 100%, 15% 60%, 20% 100%, 
+                25% 60%, 30% 100%, 35% 60%, 40% 100%, 45% 60%, 
+                50% 100%, 55% 60%, 60% 100%, 65% 60%, 70% 100%, 
+                75% 60%, 80% 100%, 85% 60%, 90% 100%, 95% 60%, 100% 100%
+            );
+            transform: scaleY(0);
+            transform-origin: bottom;
+            animation: growFromSoil 1.5s ease-out forwards;
         }
     </style>
 </head>
 <body>
 
 <div class="garden">
-    <!-- Flor 1 -->
+    <!-- Cesped -->
+    <div class="grass"></div>
+
+    <!-- Muchas flores -->
     <div class="flower flower--1">
         <div class="flower__stem"></div>
         <div class="flower__leaf flower__leaf--1"></div>
@@ -34,8 +54,73 @@
         <div class="flower__center"></div>
     </div>
 
-    <!-- Flor 2 -->
     <div class="flower flower--2">
+        <div class="flower__stem"></div>
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__petal flower__petal--1"></div>
+        <div class="flower__petal flower__petal--2"></div>
+        <div class="flower__petal flower__petal--3"></div>
+        <div class="flower__petal flower__petal--4"></div>
+        <div class="flower__center"></div>
+    </div>
+
+    <div class="flower flower--3">
+        <div class="flower__stem"></div>
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__petal flower__petal--1"></div>
+        <div class="flower__petal flower__petal--2"></div>
+        <div class="flower__petal flower__petal--3"></div>
+        <div class="flower__petal flower__petal--4"></div>
+        <div class="flower__center"></div>
+    </div>
+
+    <div class="flower flower--4">
+        <div class="flower__stem"></div>
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__petal flower__petal--1"></div>
+        <div class="flower__petal flower__petal--2"></div>
+        <div class="flower__petal flower__petal--3"></div>
+        <div class="flower__petal flower__petal--4"></div>
+        <div class="flower__center"></div>
+    </div>
+
+    <div class="flower flower--5">
+        <div class="flower__stem"></div>
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__petal flower__petal--1"></div>
+        <div class="flower__petal flower__petal--2"></div>
+        <div class="flower__petal flower__petal--3"></div>
+        <div class="flower__petal flower__petal--4"></div>
+        <div class="flower__center"></div>
+    </div>
+
+    <div class="flower flower--6">
+        <div class="flower__stem"></div>
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__petal flower__petal--1"></div>
+        <div class="flower__petal flower__petal--2"></div>
+        <div class="flower__petal flower__petal--3"></div>
+        <div class="flower__petal flower__petal--4"></div>
+        <div class="flower__center"></div>
+    </div>
+
+    <div class="flower flower--7">
+        <div class="flower__stem"></div>
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__petal flower__petal--1"></div>
+        <div class="flower__petal flower__petal--2"></div>
+        <div class="flower__petal flower__petal--3"></div>
+        <div class="flower__petal flower__petal--4"></div>
+        <div class="flower__center"></div>
+    </div>
+
+    <div class="flower flower--8">
         <div class="flower__stem"></div>
         <div class="flower__leaf flower__leaf--1"></div>
         <div class="flower__leaf flower__leaf--2"></div>
